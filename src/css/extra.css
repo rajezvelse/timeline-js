@@ -1,0 +1,203 @@
+.timespace-timeline {
+    margin-bottom: 50px;
+}
+
+.timespace-timeline .loader {
+    background-color: rgba(100, 100, 100, 0.1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    text-align: center;
+}
+
+.timespace-timeline .loader-icon {
+    vertical-align: middle;
+    font-size: 30px;
+    position: relative;
+    top: 40%;
+}
+
+.timespace-timeline .container {
+    position: relative;
+}
+
+.timespace-timeline .jqTimespaceTableContainer {
+    margin: 0 !important;
+    max-width: 100% !important;
+    padding: 0 37px;
+}
+
+.timespace-timeline .jqTimepsaceContainer table {
+    background: transparent;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+
+.timespace-timeline .jqTimepsaceContainer table tr {
+    background: transparent;
+    border: none;
+}
+
+.timespace-timeline .jqTimepsaceContainer tbody td {
+    height: 70px;
+    padding: 0;
+    position: relative;
+    border: none;
+}
+
+.timespace-timeline .jqTimepsaceContainer table tr:first-child td {
+    padding-top: 70px;
+}
+
+.timespace-timeline .jqTimepsaceContainer tbody td:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #b3abab;
+    width: 100%;
+}
+
+.timespace-timeline .jqTimepsaceContainer tbody tr:first-child td:before {
+    top: 70px;
+}
+
+.timespace-timeline .jqTimespaceEvent {
+    padding: 0 !important;
+}
+
+.timespace-timeline .jqTimespaceEvent .jqTimespaceEventMarker {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    top: -10px;
+    padding: 3px;
+    left: -12px;
+    transition: unset;
+}
+
+.timespace-timeline .jqTimespaceEvent .jqTimespaceEventMarker:hover {
+    width: 30px;
+    height: 30px;
+    left: -19px;
+    top: -19px;
+}
+
+.timespace-timeline .jqTimespaceEvent .jqTimespaceEventBorder {
+    height: 70px;
+    top: -70px;
+    display: none;
+}
+
+.timespace-timeline .jqTimespaceEvent .jqTimespaceEventMarker:hover + .jqTimespaceEventBorder {
+    display: block;
+}
+.jqTimepsaceContainer .jqTimespaceLeft span, .jqTimepsaceContainer .jqTimespaceRight span {
+    font-weight: bolder;
+    font-size: 30px;
+}
+.jqTimespaceTableContainer .diary-time-tracking-event {
+    padding: 2px;
+}
+
+.jqTimespaceEvent .jqTimespaceEventMarker.no-class {
+    background: #969393;
+}
+
+.jqTimespaceEvent .trip-start {
+    background: #60a369;
+}
+
+.jqTimespaceEvent .trip-stop {
+    background: #b95858;
+}
+
+.jqTimespaceEvent .icon {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.jqTimespaceEvent .trip-start .icon {
+    margin-left: 1px;
+}
+
+.jqTimespaceEvent .diary-event-label.accept,
+.jqTimespaceEvent .diary-event-label.arrive,
+.jqTimespaceEvent .diary-event-label.leave {
+    background: #60a369;
+}
+
+.jqTimespaceEvent .diary-event-label.reject,
+.jqTimespaceEvent .diary-event-label.abort,
+.jqTimespaceEvent .diary-event-label.cancel {
+    background: #b95858;
+}
+
+.jqTimespaceEvent .diary-event-label.no-access {
+    background: #d4a93c;
+}
+
+.jqTimespaceEvent .diary-event-label.travel {
+    background: #6393b5;
+}
+
+.jqTimespaceEvent .fas {
+    width: 100%;
+    text-align: center;
+    top: -2px;
+    position: relative;
+    /*transition: all 0.3s ease-in;*/
+}
+
+.jqTimespaceEvent [class^="ss"] {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 11px;
+    display: block;
+    padding: 0;
+    top: -2px;
+    position: relative;
+    /*transition: all 0.3s ease-in;*/
+}
+
+.jqTimespaceEvent .ss-navigate {
+    top: 0;
+}
+
+.jqTimespaceEvent .lbl {
+    position: absolute;
+    width: 45px;
+    left: -21px;
+    text-align: center;
+    word-break: break-all;
+    top: 22px;
+    padding: 5px 8px;
+    color: black;
+    z-index: 100000;
+    background: white;
+    font-size: 11px;
+    line-height: 1em;
+}
+
+.user-driving-profile-report .jqTimespaceEvent .jqTimespaceEventMarker:hover .icon {
+    font-size: 18px;
+    padding: 6px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.user-driving-profile-report .jqTimespaceEvent .jqTimespaceEventMarker:hover [class^="ss"] {
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+.jqTimespaceEvent .jqTimespaceEventMarker:hover .lbl {
+    top: 38px;
+    left: -13px;
+}
